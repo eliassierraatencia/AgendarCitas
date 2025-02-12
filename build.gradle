@@ -46,6 +46,9 @@ dependencies {
     implementation group: 'org.mockito', name: 'mockito-core', version: '3.12.4'
     testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.8.2'
 
+    //implementation 'com.aventstack:extentreports:5.0.9'
+    testImplementation 'io.qameta.allure:allure-cucumber7-jvm:2.25.0'
+
 //DEPENDECIAS DE UTILIDADES
     implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1'
     implementation group: 'org.apache.commons', name: 'commons-collections4', version: '4.4'

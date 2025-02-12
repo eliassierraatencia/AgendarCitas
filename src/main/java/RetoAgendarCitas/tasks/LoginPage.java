@@ -1,5 +1,6 @@
 package RetoAgendarCitas.tasks;
 
+import RetoAgendarCitas.interactions.ScrollByCoordinates;
 import RetoAgendarCitas.models.setdata.AbrirCitas;
 import RetoAgendarCitas.models.setdata.LoginCitas;
 import RetoAgendarCitas.userinterface.Autenticarse;
@@ -21,6 +22,7 @@ public class LoginPage implements Task {
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
                 Click.on(Autenticarse.BTN_MENU),
+                ScrollByCoordinates.to(805, 490),
                 Enter.theValue(loginCitas.getUsuario()).into(Autenticarse.TXT_USUARIO),
                 Enter.theValue(loginCitas.getContrasena()).into(Autenticarse.TXT_CONTRASEÑA),
                 Click.on(Autenticarse.BTN_LOGIN)

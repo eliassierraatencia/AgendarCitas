@@ -9,6 +9,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features/AgendarCita.feature",
         tags = "@Registro",
         glue = "Stepdefinitions",
+        plugin = {"pretty", "json:target/cucumber-reports/cucumber.json"},
         snippets = CucumberOptions.SnippetType.CAMELCASE
 
 )
